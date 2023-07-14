@@ -1,23 +1,23 @@
-VERIFICATION
+﻿VERIFICATION
 Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
 
 The packaged Windows portable archive is available for independent download via the
 Releases page on Paraffin's GitHub repository. A download link for the packaged version
 is included at the following URL:
-https://github.com/Wintellect/Paraffin/releases/tag/3.7.1
+%tagReleaseUrl%
 
 For convenience, this is a direct URL to the relevant asset:
-https://github.com/Wintellect/Paraffin/releases/download/3.7.1/Paraffin.zip
+%archiveUrl%
 
-The following PowerShell command will print a calculated SHA256 hash:
+The following PowerShell command will print a calculated %checksumType% hash:
 
-    (Get-FileHash -Path Paraffin.zip -Algorithm SHA256).Hash
+    (Get-FileHash -Path %archiveFileName% -Algorithm %checksumType%).Hash
 
 This command should be executed against an independently downloaded archive, as well
 as the copy distributed with the package. Both hash values should be identical. A
 matching hash value should confirm that no corruption or tampering has occurred
 during this package's generation process.
 
-For reference, the following SHA256 hash was calculated during the package's automated creation:
-936A67C31AAB7FD4AA29C065044FC5F2342085F559D1ED6890A18E5740CBFEB0
+For reference, the following %checksumType% hash was calculated during the package's automated creation:
+%checksumValue%

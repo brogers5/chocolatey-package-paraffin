@@ -1,25 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
-<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
-  <metadata>
-    <id>paraffin</id>
-    <version>3.7.1</version>
-    <packageSourceUrl>https://github.com/brogers5/chocolatey-package-paraffin/tree/v3.7.1</packageSourceUrl>
-    <owners>sublym0nal</owners>
-    <title>Paraffin</title>
-    <authors>John Robbins</authors>
-    <projectUrl>https://github.com/Wintellect/Paraffin</projectUrl>
-    <!--<iconUrl>No icon is used/available for this program</iconUrl>-->
-    <copyright>(c) 2007-2017, John Robbins - john@wintellect.com</copyright>
-    <licenseUrl>https://github.com/Wintellect/Paraffin/blob/3.7.1/CPL.TXT</licenseUrl>
-    <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <projectSourceUrl>https://github.com/Wintellect/Paraffin/tree/3.7.1</projectSourceUrl>
-    <docsUrl>https://github.com/Wintellect/Paraffin/blob/3.7.1/ReadMe.md</docsUrl>
-    <!--<mailingListUrl>No forum/email list exists</mailingListUrl>-->
-    <bugTrackerUrl>https://github.com/Wintellect/Paraffin/issues</bugTrackerUrl>
-    <tags>paraffin windows-installer windows installer wix wxs fragment cli portable foss</tags>
-    <summary>A tool for generating Windows Installer XML (WiX) 3.6/4.0 file fragments.</summary>
-    <description><![CDATA[
+
 ---
 
 ### [choco://paraffin](choco://paraffin)
@@ -59,17 +38,3 @@ Since the original release of Paraffin a few other requirements have been added:
 - Specifying the `DiskID` is supported so you can handle giant installers easier
 - Full support for minor upgrades with transitive properties set so you can remove files on the minor upgrade and produce zero byte files so your installer builds
 - Support for reporting if subsequent runs of Paraffin are reporting different output (i.e., adding or removing files)
-]]></description>
-    <releaseNotes>https://github.com/Wintellect/Paraffin/blob/3.7.1/ChangeLog.md</releaseNotes>
-    <dependencies>
-      <dependency id="netfx-4.6.2" version="4.6.2.0" />
-    </dependencies>
-  </metadata>
-  <files>
-    <file src="tools\chocolateybeforemodify.ps1" target="tools" />
-    <file src="tools\chocolateyinstall.ps1" target="tools" />
-    <file src="tools\Paraffin.zip" target="tools" />
-    <file src="tools\LICENSE.txt" target="tools" />
-    <file src="tools\VERIFICATION.txt" target="tools" />
-  </files>
-</package>
