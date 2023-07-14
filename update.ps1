@@ -30,7 +30,7 @@ function global:au_SearchReplace {
             "(<licenseUrl>)[^<]*(</licenseUrl>)"             = "`$1https://github.com/$($owner)/$($repository)/blob/$($Latest.SoftwareVersion)/CPL.TXT`$2"
             "(<projectSourceUrl>)[^<]*(</projectSourceUrl>)" = "`$1https://github.com/$($owner)/$($repository)/tree/$($Latest.SoftwareVersion)`$2"
             "(<releaseNotes>)[^<]*(</releaseNotes>)"         = "`$1https://github.com/$($owner)/$($repository)/blob/$($Latest.SoftwareVersion)/ChangeLog.md`$2"
-            "(<copyright>)[^<]*(</copyright>)"               = "`$1(c) 2007-$((Get-Date).Year), John Robbins - john@wintellect.com`$2"
+            "(<copyright>)[^<]*(</copyright>)"               = "`$1(c) 2007-$((Get-Date).Year), John Robbins`$2"
         }
         'tools\VERIFICATION.txt'        = @{
             '%checksumValue%'   = "$($Latest.Checksum32)"
