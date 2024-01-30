@@ -1,12 +1,3 @@
-
----
-
-### [choco://paraffin](choco://paraffin)
-
-To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support](https://community.chocolatey.org/packages/choco-protocol-support)
-
----
-
 ## Paraffin - Making WiX Easier
 
 [Windows Installer XML](http://wixtoolset.org/) is a fantastic tool for building installers. One small weakness with WiX is keeping your file fragments up to date. While the Heat tool creates the fragments easily, you have to manually edit the `.WXS` when adding and removing files. Paraffin has been around for a while, but the original requirements sum up the project nicely.
